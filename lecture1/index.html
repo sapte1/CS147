@@ -2,37 +2,81 @@
 <html>
 	<head>
 		<title>MyApp</title>
+		<link href='http://fonts.googleapis.com/css?family=Syncopate:400,700' rel='stylesheet' type='text/css'>
+		<link rel="apple-touch-icon" href="appicon.png" />
+		<link rel="apple-touch-startup-image" href="startup.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-webapp-status-bar-style" content="grey" />
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
 	</head>
 	
 	<style type="text/css">
 		body {
-			background:#e10909;
+			background:#DCDCDC;
 			font-family: Helvetica, Arial, sans-serif;
 		}
 		h2 {
-			font-size:22px;
-			font-weight:300;
-			color:#aaa;
+			font-size:30px;
+			font-family: 'Syncopate', sans-serif;
+			font-weight:bold;
+			color:#FF1493;
+			text-shadow: 3px 3px #FAFAD2;
+		}
+		div#outer {
+			
+		}
+		div.box {
+			width: 40%;
+			padding: 0px 0px 10px 10px;
+			margin: 10px;
+			border: 1px solid #000000;
+			border-radius: 20px;
+			box-shadow: 8px 8px 4px #888;
+
+		}
+		.button {
+			background:#333;
+			width:100px;
+			color:#fff;
+			height:20px;
+		     -moz-border-radius: 20px;
+		    -webkit-border-radius: 20px;
+		    -khtml-border-radius: 20px;
+		    border-radius: 20px;
+		    text-align:center;
 		}
 	</style>
 	
 	<body>
-	 		<h2>Shilpa Apte</h2>
-		<div id='bio'>Crime-solver. Noir detective extraordinaire.</div>
-	 
-	 	<h3>Assignments</h3>
-		<ul id='assignments'>
-			<li>Go undercover</li>
-			<li>Learn HTML</li>
-		</ul>
-	
-		<h3>A nice button</h3>
+		<div id="outer">
+		 	<h2>Shilpa Apte</h2>
+			<div id='bio'>Crime-solver. Noir detective extraordinaire.</div>
+		 
+		 	<div class="box">
+		 		<h3>Assignments</h3>
+				<ul id='assignments'>
+					<li>Go undercover</li>
+					<li>Learn HTML</li>
+				</ul>
+			</div>
+			<div class="box">	
+				<h3>A nice button</h3>
+				<div class="button">Click Me</div>
+			</div>
+			<div class="box">
+				<h3>An invisible seal</h3>
+				<p><img width="50" class="opacity" src="seal.png" /></p>
+			</div>
 
-		<h3>An invisible seal</h3>
-
-		<h3>A video</h3>
-
-		<h3>Two boxes side by side</h3>
+			<div class="box">
+				<h3>A video</h3><video width="300" height="240" controls="controls">
+			  	<source src="gizmo.mp4" type="video/mp4" />
+				</video>
+			</div>
+			<div class="box">
+				<h3>Two boxes side by side</h3>
+			</div>
+		</div>
 
 	</body>
 </html>
